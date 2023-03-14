@@ -16,7 +16,7 @@ body {
 
 .container {
   display: flex;
-  width: 50%;
+  width: 36rem;
   flex-direction: column;
   margin: 0 auto;
   margin-top: 24px;
@@ -29,14 +29,32 @@ header {
   grid-row: 1;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   gap: 24px;
-  box-shadow: 0px 10px 7px -3px rgba(66, 68, 90, 1);
+  box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.15);
+}
+
+header button {
+  padding: 12px 8px;
+  border: 1px solid #d1d5db;
+  background-color: #fff;
+  border-radius: 4px;
+  font-family: inherit;
+  cursor: pointer;
+  height: 100%;
+}
+
+header input {
+  align-self: stretch;
+  height: 100%;
 }
 
 #color-type {
   flex: 3;
   font-family: "Inter", sans-serif;
+  height: 100%;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
 }
 
 /* Main and colors */
@@ -81,18 +99,22 @@ main {
   font-size: 12px;
 }
 
+/* Clipboard */
+
 .clipboard {
-  color: #fff;
-  border: 5px solid black;
   position: absolute;
   left: 0;
   right: 0;
   top: 0;
   margin: 0 auto;
-  padding: 24px;
-  background-color: #eee222;
+  color: #000;
+  border-top: none;
+  border: 0.1px solid black;
+  padding: 18px;
+  border-radius: 0 0 10px 10px;
+  background-color: #ffffff;
   text-align: center;
-  width: 250px;
+  width: 240px;
 }
 
 .hidden {
