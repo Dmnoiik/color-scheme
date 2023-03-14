@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer type="module"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <p class="clipboard transition hidden">Copied to clipboard</p>
+    <div class="container">
+      <header>
+        <input type="color" id="color-picker" />
+        <select name="color-type" id="color-type">
+          <option value="monochrome">monochrome</option>
+          <option value="monochrome-dark">monochrome-dark</option>
+          <option value="monochrome-light">monochrome-light</option>
+          <option value="complement">complement</option>
+          <option value="analogic">analogic</option>
+          <option value="analogic-complement">analogic-complement</option>
+          <option value="triad">triad</option>
+          <option value="quad">quad</option>
+        </select>
+        <button class="color-btn">Get color scheme</button>
+      </header>
+      <main>
+        <div class="color--container">
+          <div class="color color1"></div>
+          <p class="color-info">#221122</p>
+        </div>
+        <div class="color--container">
+          <div class="color color2"></div>
+          <p class="color-info">#443322</p>
+        </div>
+        <div class="color--container">
+          <div class="color color3"></div>
+          <p class="color-info">#bbcc22</p>
+        </div>
+        <div class="color--container">
+          <div class="color color4"></div>
+          <p class="color-info">#ff2211</p>
+        </div>
+        <div class="color--container">
+          <div class="color color5"></div>
+          <p class="color-info">#ee7422</p>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
